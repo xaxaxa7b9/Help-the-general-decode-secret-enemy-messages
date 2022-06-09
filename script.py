@@ -27,7 +27,7 @@ def encode(s):
         encrypted.append(s[j-1])
     for el in charList:
       if el == s[j-1]:
-        encrypted.append((charList.index(el)+(((2**j)-1)*charList.index(el))) % 67)
+        encrypted.append((charList.index(el)*(2**j)) % 67)
         
   
   for i in encrypted:
@@ -47,6 +47,7 @@ encode(toEncode)
 #as far as i understand the encoding, if you set an index to each character then the encoding function should look like this
 
 #(i+(2^j-1)*i)%67
+#EDIT: why the f i didnt shorten it to i*2^j
 
 #where i = character index
 #      j = letter position ("abc" a=1,b=2,c=3 position)

@@ -1,7 +1,3 @@
-
-
-#to do list: create decode() function to complete the kata
-
 import string
 
 
@@ -10,17 +6,17 @@ def encode(s):
   encrypted = []
 
   
-  charList.append("æ") #just blank place for index 0
+  charList.append("Ã¦") #just blank place for index 0
   for x, y in zip(range(1, 64), string.ascii_letters+string.digits):
       charList.append(y)
       
   #i have found that the encode function reacts to the following characters, but i am only sure about 3/5 of them
     
-  charList.append('æ') #dk
+  charList.append('Ã¦') #dk
   charList.append(',')
   charList.append('.')
   charList.append(' ')
-  charList.append('æ') #dk
+  charList.append('Ã¦') #dk
   
   exceptions = ['!','@','#','$','%','^','&','*','(',')','_','+','-','~']
 

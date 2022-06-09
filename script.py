@@ -49,7 +49,7 @@ encode(toEncode)
 #(i+(2^j-1)*i)%67
 
 #where i = character index
-#      j = letter position (for example if we take "abc" - "a" is on first, "b" on second and "c" on third possition )
+#      j = letter position ("abc" a=1,b=2,c=3 position)
 
 
 

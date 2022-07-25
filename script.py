@@ -10,7 +10,7 @@ def encode(s):
   for x, y in zip(range(1, 64), string.ascii_letters+string.digits):
       charList.append(y)
       
-  #i have found that the encode function reacts to the following characters, but i am only sure about 3/5 of them
+ 
     
   charList.append('æ') #dk
   charList.append(',')
@@ -44,10 +44,10 @@ encode(toEncode)
 
 
 
-#as far as i understand the encoding, if you set an index to each character then the encoding function should look like this
+
 
 #(i+(2^j-1)*i)%67
-#EDIT: why the f i didnt shorten it to i*2^j
+#i*2^j
 
 #where i = character index
 #      j = letter position ("abc" a=1,b=2,c=3 position)
